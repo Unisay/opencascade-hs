@@ -35,3 +35,10 @@ ghc-options: *ghc-options
 
 library:
     source-dirs: src
+
+tests:
+  waterfall-cad-test:
+    main: RepeatLoopingTest.hs
+    source-dirs: test
+    dependencies:
+      - waterfall-cad

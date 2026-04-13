@@ -1,6 +1,6 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.37.0.
+-- This file has been generated from package.yaml by hpack version 0.38.3.
 --
 -- see: https://github.com/sol/hpack
 
@@ -74,4 +74,24 @@ library
     , opencascade-hs >=0.6.2.1 && <0.7
     , primitive >=0.7 && <0.10
     , resourcet >=1.2 && <1.4
+  default-language: Haskell2010
+
+test-suite waterfall-cad-test
+  type: exitcode-stdio-1.0
+  main-is: RepeatLoopingTest.hs
+  other-modules:
+      Paths_waterfall_cad
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Werror=compat -Werror=identities -Werror=incomplete-record-updates -Werror=incomplete-uni-patterns -Werror=missing-home-modules -Werror=missing-export-lists -Werror=partial-fields -Werror=redundant-constraints -optc -Werror-implicit-function-declaration
+  build-depends:
+      base >=4.7 && <5
+    , filepath >=1.4 && <1.6
+    , lattices >=2.0 && <3
+    , lens ==5.*
+    , linear >=1.21 && <2
+    , opencascade-hs >=0.6.2.0 && <0.7
+    , primitive >=0.7 && <0.10
+    , resourcet >=1.2 && <1.4
+    , waterfall-cad
   default-language: Haskell2010
