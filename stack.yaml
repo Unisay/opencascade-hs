@@ -1,6 +1,12 @@
 resolver:
   url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/23/16.yaml
 
+system-ghc: true
+install-ghc: false
+
+nix:
+  shell-file: stack-shell.nix
+
 packages:
 - opencascade-hs
 - waterfall-cad
