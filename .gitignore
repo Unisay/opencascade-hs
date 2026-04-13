@@ -2,3 +2,4 @@
 .stack-work/
 dist-newstyle/
 *~
+.claude/settings.local.json
